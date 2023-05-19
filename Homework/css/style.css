@@ -18,7 +18,11 @@ img {
 }
 
 body {
-  font-family: 'font', sans-serif;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+figure {
+  font-size: 0;
 }
 
 .main-content {
@@ -39,10 +43,25 @@ body {
   display: inline-block;
   padding: 24px 49px;
   margin-right: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #3f2aff;
 }
 
 .refs:last-child {
   margin-right: 0;
+}
+
+.download {
+  position: relative;
+  padding-left: 1.2em;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f2aff;
+  background-image: url("../img/download.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
 }
 
 .container {
@@ -54,22 +73,47 @@ body {
 .main-header {
   margin-top: 0;
   margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #333;
 }
 
 .main-sections {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
 }
 
 .main-subsections {
   margin-top: 0;
   margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333;
 }
 
 .standard-paragraph {
   margin-top: 0;
   margin-bottom: 40px;
   max-width: 872px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
+}
+
+.important-paragraph {
+  border-radius: 20px;
+  padding: 50px 95px;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  background-color: #3f2aff;
 }
 
 .main-list {
@@ -78,11 +122,19 @@ body {
   margin-bottom: 0;
 }
 
-.list-el:not(:last-child) {
+.list-el {
   margin-bottom: 20px;
+  color:#3f2aff
 }
 
+.list-el:last-child {
+  margin-bottom: 0px;
+}
 
+.list-href {
+  border-bottom: 1px #3f2aff solid;
+  font-size: 20px;
+}
 
 .img-block {
   display: inline-block;
@@ -94,6 +146,12 @@ body {
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.grey-blocks-image {
+  background-image: url("../img/decorate-1.png")
 }
 
 .grey-blocks:not(:last-child) {
@@ -104,6 +162,10 @@ body {
   margin-bottom: 10px;
   max-width: 692px;
   margin-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333;
 }
 
 .grey-blocks-p:last-child{
@@ -112,4 +174,12 @@ body {
 
 .img-alone {
   margin-bottom: 40px;
+}
+
+.img-block figcaption {
+  border: solid #b6b6b6 1px;
+  padding: 19px 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
 }
