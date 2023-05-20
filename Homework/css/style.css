@@ -187,20 +187,29 @@ figure {
 .container_module {
   max-width: 1170px;
   margin: auto;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 
-.img-logo {
-  margin-bottom: 25px;
+.logo {
   display: block;
+  margin-bottom: 25px;
 }
 
-.pre_header {
+.ref_back {
   color: #3F2AFF;
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   margin-bottom: 25px;
+  padding-left: 52px;
+  display: inline-block;
+  background-image: url("../img/Arrow\ 1.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.arrow {
+  height: 1rem;
 }
 
 .main-header-modules {
@@ -220,12 +229,32 @@ figure {
 }
 
 .card {
+  position: relative;
   display: inline-block;
-  padding-top: 180px;
+  padding: 25px;
+  padding-top: 205px;
   background-repeat: no-repeat;
   margin-bottom: 25px;
-  height: 100%;
   vertical-align: top;
+  width: 572px;
+  height: 505px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1)
+}
+
+.card1 {
+  background-image: url('../img/introduction.jpg');
+}
+
+.card2 {
+  background-image: url('../img/html.jpg');
+}
+
+.card3 {
+  background-image: url('../img/basic\ css.jpg');
+}
+
+.card4 {
+  background-image: url('../img/model.jpg');
 }
 
 .card:not(:nth-child(2n)) {
@@ -237,11 +266,10 @@ figure {
 }
 
 .inner-list {
+  padding: 0;
   display: inline-block;
-  padding: 25px;
   list-style-type: none;
-  width: 572px;
-  height: 325px;
+
 }
 
 .inner-header-card {
@@ -262,11 +290,19 @@ figure {
 .btn {
   display: block;
   margin: 0 auto;
-  margin-bottom: 50px;
   font-size: 18px;
   font-weight: 700;
   color: #3F2AFF;
   padding: 24px 75px;
   border: 2px solid #3F2AFF;
   background-color: white;
+}
+
+.page {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-size: 40px;
+  font-weight: 400px;
+  color: #EAEAEA;
 }
